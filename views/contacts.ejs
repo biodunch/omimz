@@ -1,64 +1,698 @@
-<% layout('layout') -%>
-<% include ./partials/header %>
+<!doctype html>
+<html class="no-js" lang="en">
 
-<section id="innerheader2" style="background-image: url(assets/images/header/contact-header.jpg)" class="innerheader innerheader2">
-            <div class="container">
-                <div class="row pad-small">
-                    <div class="col-sm-12 text-center">
-                        <div class="inner-title">
-                            <h3 data-wow-delay="0.1s" class="wow fadeInUp">Contact with us</h3>
-                            <p data-wow-delay="0.2s" class="wow fadeInUp">Get Your Product</p>
-                        </div>
-                        <div data-wow-delay="0.1s" class="inner-breadcrumb wow fadeInUp">
-                            <ol class="breadcrumb">
-                                <li><a href="/" target="_blank">Home</a></li>
-                                <!--<li><a href="#">Pages</a></li>-->
-                                <li>Contact</li>
-                            </ol>
-                        </div>
-                    </div>
+
+<!-- Mirrored from demo.themesease.com/salt-multi-purpose/pages-contact-us-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Apr 2017 20:36:49 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ========== VIEWPORT META ========== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- ========== PAGE TITLE ========== -->
+    <title>Salt - Contact Us | Multipurpose Responsive HTML Site Template</title>
+
+    <!-- ========== META TAGS ========== -->
+    <meta name="description" content="Salt - Responsive Multipurpose HTML5 Template ">
+    <meta name="keywords" content="business, responsive, multi-purpose">
+    <meta name="author" content="ThemesEase">
+
+    <!-- ========== FAVICON & APPLE ICONS ========== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- ========== MINIFIED VENDOR CSS ========== -->
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="vendor/sweetalert2/dist/sweetalert2.min.css">
+
+    <!-- ========== MAIN CSS ========== -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+</head>
+
+<!-- ==================================================
+Body: Classes
+header-shadow - Set shadow for header & menu
+dark-menu - Change menu to dark [Don't use with light-header]
+light-header - Set light background to header [Don't use with dark-menu]
+dark-header - Set dark background to header
+bold-menu - For bolder links
+semi-trans-header - set transparency to header [Use with 'light-header' or 'dark-header']
+center-logo - Logo at center
+small-header - For lesser height
+nav-hidden - Open nav on icon click
+================================================== -->
+<body class="header-shadow">
+<!-- ========== LOADER ========== -->
+    <div class="page-loader">
+        <img src="images/logo.png" alt="Salt" width="160" class="logo-img logo-loader animated infinite pulse">
+    </div>
+    
+    <!-- ========== HEADER ========== -->
+    <div class="header menu-style-5">
+
+        <!-- ========== TOP BAR ========== -->
+        <div class="top-menu">
+            <div class="container-fluid">
+                <div class="left-div pull-left">
+                    <a class="" href="#">About Us</a>
+                    <a class="" href="#">Contact Us</a>
                 </div>
-            </div>
-        </section>
-        <!-- /#innerheader2-->
-        <section id="contact" class="contact-form section">
+                <div class="right-div pull-right">
+                    <a href="#">08184506771 | 08037522409</a>
+                    <a href="#">contact@omimz.com.ng</a>
+                    <a href="#" class=""><i class="fa fa-facebook"></i></a>
+                    <a href="#" class=""><i class="fa fa-instagram"></i></a>
+                </div>
+                
+            </div> <!-- end container-fluid -->
+        </div> <!-- end top-menu -->
+
+        <div class="container">
+
+            <!-- ========== MENU ========== -->
+            <nav class="menu">
+                <div class="logo">
+                    <a href="index-2.html"><img src="images/logo.png" alt="Salt" class="logo-img"></a>
+                </div> <!-- end logo -->
+
+                <!-- ========== MAIN MENU ========== -->
+                <ul class="main-menu">
+                    <li class="active menu-item">
+                        <a href="/"><i class="menu-icon fa fa-home"></i> Home</a>
+                        <!-- Sub Menu -->
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="/products"><i class="menu-icon fa fa-magnet"></i> Products</a>
+                        <ul class="mega-submenu no-image">
+                            <li class="">
+                                <a href="/products/wallpapers"><i class="fa fa-circle-o"></i> Wallpapers</a>
+                            </li>
+                            <li class="">
+                                <a href="/products/wallpanels"><i class="fa fa-check"></i>Wall Panels</a>
+                            </li>
+                            <li class="">
+                                <a href="/products/wallstickers"><i class="fa fa-rocket"></i>Wall Stickers</a>
+                            </li>
+                            <li class="">
+                                <a href="/products/woodenfloors"><i class="fa fa-rocket"></i>Wooden Floors</a>
+                            </li>
+                           <li class="">
+                                <a href="/products/windowblinds"><i class="fa fa-hashtag"></i> Window Blinds</a>
+                            </li>
+                            <!-- end submenu-bottom -->
+                        </ul> <!-- end mega-submenu -->
+                    </li> <!-- end menu-item -->
+
+                    <li class="menu-item">
+                        <a href="#"><i class="fa fa-bars"></i> Services</a>
+                        <!-- Sub Menu -->
+                        <ul class="mega-submenu normal-sub">
+                            <li class="">
+                                <a href="portfolio-mosaic.html"><i class="fa fa-hashtag"></i> Event Decorations</a>
+                            </li>
+                            <li class="">
+                                <a href="portfolio-default.html"><i class="fa fa-circle-o"></i> Cleaning Services</a>
+                            </li>
+                            <li class="">
+                                <a href="portfolio-4-column-style-2.html"><i class="fa fa-check"></i> Interior Decoration</a>
+                            </li>
+                            <!-- end has-subsubmenu -->
+                        </ul> <!-- end mega-submenu -->
+                    </li> <!-- end menu-item -->
+
+                    <li class="menu-item">
+                        <a href="blog.html"><i class="fa fa-diamond"></i> Gallery</a>
+                        <!-- Sub Menu -->
+                        <!-- end mega-submenu -->
+                    </li> <!-- end menu-item -->
+
+                    <li class="menu-item">
+                        <a href="#"><i class="fa fa-bars"></i> Who We Are</a>
+                        <!-- Sub Menu -->
+                        <ul class="mega-submenu normal-sub">
+                            <li class="">
+                                <a href="portfolio-mosaic.html"><i class="fa fa-hashtag"></i> Vision </a>
+                            </li>
+                            <li class="">
+                                <a href="portfolio-default.html"><i class="fa fa-circle-o"></i> Mission </a>
+                            </li>
+                            <!-- end has-subsubmenu -->
+                        </ul> <!-- end mega-submenu -->
+                    </li> <!-- end menu-item -->
+
+                    <li class="menu-item">
+                        <a href="#"><i class="menu-icon fa fa-magic"></i> Contact Us</a>
+                    </li> <!-- end menu-item -->
+
+                    <li class="menu-item cart-icon">
+                        <a href="#" class=""><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="menu-item cart-icon">
+                        <a href="#" class=""><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="menu-item cart-icon">
+                        <a href="#" class=""><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="menu-item cart-icon">
+                        <a href="#" class=""><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul> <!-- end main-menu -->
+            </nav> <!-- end menu -->
+        </div> <!-- end container-fluid -->
+    </div> <!-- end header -->
+
+    <!-- ========== MAIN ========== -->
+    <div class="main">
+
+        <!-- ========== ANIMATED PAGE TITLE ========== -->
+        <div class="slider-container rev_slider_wrapper">
+            <div id="pageTitleHero" class="slider rev_slider pageTitleHero" data-plugin-revolution-slider data-plugin-options=''>
+                <ul>
+                    <!-- SLIDE  -->
+                    <li data-index="rs-226" data-transition="zoomout" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off"
+                        data-title="Intro">
+                        <!-- MAIN IMAGE -->
+                        <img src="images/bg-img-5.jpg" alt="" title="Page title" width="1920" height="980" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                        <!-- LAYERS -->
+
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption tp-shape tp-shapewrapper" id="slide-226-layer-10" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
+                            data-height="full" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:300;s:300;" data-start="750" data-basealign="slide" data-responsive_offset="on"
+                            data-responsive="off" style="z-index: 5;text-transform:left;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 0.40);"> </div>
+
+                        <!-- LAYER NR. 2 -->
+                        <div class="tp-caption NotGeneric-Title   tp-resizeme" id="slide-226-layer-1" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-22','-29']" data-fontsize="['50','50','50','30']"
+                            data-lineheight="['70','70','70','50']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;"
+                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on"
+                            style="z-index: 7; white-space: nowrap;text-transform:left;color:#fff;">Contact Us</div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption NotGeneric-SubTitle tp-resizeme" id="slide-226-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','52','28','13']" data-width="none"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap;text-transform:left;color:#fff;">We would love to hear from you!</div>
+
+                        <!-- LAYER NR. 4 -->
+                        <div class="tp-caption NotGeneric-CallToAction rev-btn " id="slide-226-layer-7" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['105','105','80','65']" data-width="none" data-fontsize="['14','14','12','12']"
+                            data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;" data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);" data-transform_in="y:50px;opacity:0;s:1500;e:Power4.easeInOut;"
+                            data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1250" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"scrollbelow","offset":"0px"}]'
+                            data-responsive_offset="on" data-responsive="off" style="z-index: 9; white-space: nowrap;text-transform:left;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;color:#fff;">Contact Us </div>
+
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption tp-breadcrumb NotGeneric-SubTitle tp-resizeme hidden-xs hidden-sm" id="slide-226-layer-5" data-x="['right','right','center','center']" data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','middle','middle']" data-voffset="['0','0','120','80']"
+                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:1500;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap;text-transform:left;">
+                            <ol class="breadcrumb">
+                                <li><a href="#" class="trans">Home</a></li>
+                                <li><a href="#" class="trans">Pages</a></li>
+                                <li><a href="#" class="active trans">Contact Us</a></li>
+                            </ol>
+                        </div> <!-- end tp-caption -->
+                    </li> <!-- end slide -->
+                </ul>
+            </div> <!-- end pageTitleHero -->
+        </div> <!-- end slider-container -->
+
+
+        <!-- ========== CONTACT INFORMATION ========== -->
+        <div class="row feature-type-5">
+            <div class="col-md-3">
+                <div class="feature-box-5">
+                    <div class="icon">
+                        <i class="ion-android-locate"></i>
+                    </div>
+                    <h5 class="feature-title">Address</h5>
+                    <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="bg-icon ion-android-locate"></i>
+                </div> <!-- end feature-box-5 -->
+            </div> <!-- end col-md-3 -->
+            <div class="col-md-3">
+                <div class="feature-box-5 black-box">
+                    <div class="icon">
+                        <i class="ion-ios-location-outline"></i>
+                    </div>
+                    <h5 class="feature-title">Branch Office</h5>
+                    <p class="feature-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <i class="bg-icon ion-ios-location-outline"></i>
+                </div> <!-- end feature-box-5 -->
+            </div> <!-- end col-md-3 -->
+            <div class="col-md-3">
+                <div class="feature-box-5">
+                    <div class="icon">
+                        <i class="ion-headphone"></i>
+                    </div>
+                    <h5 class="feature-title">Contact Numbers</h5>
+                    <p class="feature-desc text-center">+1 (123) 456-7890<br>
+                        +91 (345) 564-7891<br>
+                        +30 (456) 456-7892</p>
+                    <i class="bg-icon ion-headphone"></i>
+                </div> <!-- end feature-box-5 -->
+            </div> <!-- end col-md-3 -->
+            <div class="col-md-3">
+                <div class="feature-box-5 black-box">
+                    <div class="icon">
+                        <i class="ion-ios-email-outline"></i>
+                    </div>
+                    <h5 class="feature-title">Email Ids</h5>
+                    <p class="feature-desc text-center"><a class="__cf_email__" href="http://demo.themesease.com/cdn-cgi/l/email-protection" data-cfemail="87f4f2f7f7e8f5f3c7f3efe2eae2f4e2e6f4e2a9e4e8ea">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script><br>
+                        <a class="__cf_email__" href="http://demo.themesease.com/cdn-cgi/l/email-protection" data-cfemail="a3cbc6cfcfcce3d7cbc6cec6d0c6c2d0c68dc0ccce">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script><br>
+                        <a class="__cf_email__" href="http://demo.themesease.com/cdn-cgi/l/email-protection" data-cfemail="1b687a777e685b6f737e767e687e7a687e35787476">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></p>
+                    <i class="bg-icon ion-ios-email-outline"></i>
+                </div> <!-- end feature-box-5 -->
+            </div> <!-- end col-md-3 -->
+        </div> <!-- end feature-type-5 -->
+
+        <!-- ========== CONTACT FORM SECTION ========== -->
+        <section class="content-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 contact-header">
-                        <h2>Get in touch</h2>
-                    </div>
-                    <div class="col-md-6 contact-desc">
-                        <p class="wow fadeInUp">If you like our products, feel free to come to our office or contact us for more information.</p>
-                        <div data-wow-delay="0.1s" class="call-us contact-icon-block clearfix wow fadeInUp"><span class="contact-form-icons text-center"><i class="ion-ios-telephone"></i></span>
-                            <div class="contact-small-text">
-                                <h5 class="contact-small-header">Call us</h5><span>+61 3 8376 6284</span></div>
-                        </div>
-                        <div data-wow-delay="0.2s" class="address contact-icon-block clearfix wow fadeInUp"><span class="contact-form-icons text-center"><i class="ion-ios-location"></i></span>
-                            <div class="contact-small-text">
-                                <h5 class="contact-small-header">Address</h5><span>House No.124, Road No.1,<br/>Mohakhali,Dhaka 1206</span></div>
-                        </div>
-                        <div data-wow-delay="0.3s" class="email contact-icon-block clearfix wow fadeInUp"><span class="contact-form-icons text-center"><i class="ion-at"></i></span>
-                            <div class="contact-small-text">
-                                <h5 class="contact-small-header">Email us</h5><span>support@omimz.com</span></div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="contact-fields">
-                            <form id="contactForm" action="http://markup.themewagon.com/mountain_v_2.5.3/php/contact.php" method="post"
-                                name="contactform">
-                                <div data-wow-delay="0.1s" class="form-group wow fadeInUp"><input id="name" type="text" placeholder="Your Name" name="name" required="required" class="form-control"
-                                    /></div>
-                                <!-- /.form-group-->
-                                <div data-wow-delay="0.2s" class="form-group wow fadeInUp"><input id="email" type="email" placeholder="Your Email" name="email" required="required"
-                                        class="form-control" /></div>
-                                <!-- /.form-group-->
-                                <div data-wow-delay="0.3s" class="form-group wow fadeInUp"><textarea rows="6" placeholder="Message" name="message" class="form-control"></textarea></div>
-                                <!-- /.form-group-->
-                                <div id="contactFormResponse"></div><button id="cfsubmit" type="submit" data-wow-delay="0.2s" class="btn btn-mountain btn-block wow fadeInUp">Submit</button></form>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+                    <!-- ========== SECTION HEADER ========== -->
+                    <div class="col-md-12 section-header text-center">
+                        <h3 class="section-title underline">Drop us a line</h3>
+                        <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                    </div> <!-- end section-header -->
+
+                    <div class="col-md-6 col-md-offset-3">
+                        <form class="" id="form" method="post" name="form" action="http://demo.themesease.com/salt-multi-purpose/send-email-mailgun.php">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control input-style-2" id="name" name="name" placeholder="Full Name" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control input-style-2" id="email" name="email" placeholder="Email address" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control input-style-2" id="subject" name="subject" placeholder="Subject" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control input-style-2" id="message" name="message" placeholder="Enter your message.." required="" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LdrSCQTAAAAAFvP5P_RHmBQreGEHEiAIR3rc8FW" data-callback="reCaptchaVerify"></div>
+                            </div>
+
+                            <button type="submit" class="st-btn primary-btn hvr-back hvr-sweep-to-right pull-right">Submit</button>
+                        </form>
+                    </div> <!-- end col-md-6 -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
         </section>
 
-<% include ./partials/footer %>
+        <!-- ========== FULL WIDTH CTA ========== -->
+        <section class="cta trans">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h5 class="cta-title">Check our solutions</h5>
+                        <p class="cta-desc mb20">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                        <a href="services.html" class="btn btn-default trans">Services</a>
+                    </div> <!-- end text-center -->
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </section>
+
+    </div> <!-- end main -->
+
+    <!-- ==================================================
+    Footer: Classes
+    footer - Default footer
+    dark-footer - Dark footer [Use with .footer]
+    sticky-footer - Reveal footer on scroll
+    ================================================== -->
+    <footer class="footer dark-footer footer-style-3" id="footer">
+
+        <!-- ========== Footer - top section ========== -->
+        <div class="container footer-top">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <!-- ========== line with text rotator ========== -->
+                    <h1 class="capitalize bold pb40" style="" >We love <span id="word-rotate" class="word-rotator-footer">Web Design, ThemeForest, WordPress, Customer Support</span></h1>
+
+                    <div class="col-md-3 col-sm-6">
+                        <h5 class="footer-title underline">Company</h5>
+                        <ul class="ul">
+                            <li><a href="#" class="trans">About Company</a></li>
+                            <li><a href="#" class="trans">Our Team</a></li>
+                            <li><a href="#" class="trans">Our Vision</a></li>
+                            <li><a href="#" class="trans">Join Us</a></li>
+                            <li><a href="#" class="trans">Privacy Policy</a></li>
+                            <li><a href="#" class="trans">Terms of Use</a></li>
+                            <li><a href="#" class="trans">Return Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h5 class="footer-title underline">Services</h5>
+                        <ul class="ul">
+                            <li><a href="#" class="trans">Website Design</a></li>
+                            <li><a href="#" class="trans">Web Development</a></li>
+                            <li><a href="#" class="trans">Graphic Design</a></li>
+                            <li><a href="#" class="trans">Content Writing</a></li>
+                            <li><a href="#" class="trans">Search Engine</a></li>
+                            <li><a href="#" class="trans">Social Media</a></li>
+                            <li><a href="#" class="trans">Facebook Cover</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h5 class="footer-title underline">Shortcodes</h5>
+                        <ul class="ul">
+                            <li><a href="#" class="trans">Accordions</a></li>
+                            <li><a href="#" class="trans">Feature Boxes</a></li>
+                            <li><a href="#" class="trans">Call to Actions</a></li>
+                            <li><a href="#" class="trans">Word Typer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h5 class="footer-title underline">Features</h5>
+                        <ul class="ul">
+                            <li><a href="#" class="trans">Headers</a></li>
+                            <li><a href="#" class="trans">Footers</a></li>
+                            <li><a href="#" class="trans">Sliders</a></li>
+                            <li><a href="#" class="trans">Menu Styles</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="vcenter text-right">
+                        <img src="images/logo-light.png" alt="Salt - HTML5 theme" class="img-responsive mb20 pull-right" width="100">
+                        <div class=" clearfix">
+                            <p class="footer-desc">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ========== counters ========== -->
+                    <div class="col-md-6 col-sm-6">
+                        <div class="counter-box text-center">
+                            <span class="count-icon ion-ios-albums-outline"></span>
+                            <div class="count-info">
+                                <h6><span class="counter">120</span>+</h6>
+                                <p>devices tested.</p>
+                            </div> <!-- end count-info -->
+                        </div> <!-- end counter-box -->
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="counter-box text-center">
+                            <span class="count-icon ion-ios-flag-outline"></span>
+                            <div class="count-info">
+                                <h6><span class="counter">2200</span>+</h6>
+                                <p>projects done.</p>
+                            </div> <!-- end count-info -->
+                        </div> <!-- end counter-box -->
+                    </div>
+                </div> <!-- end col-md-4 -->
+
+            </div> <!-- end row -->
+        </div> <!-- end footer-top -->
+
+        <!-- ========== Footer - middle section ========== -->
+        <div class="container footer-middle">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6 class="footer-title lowercase"><i class="fa fa-phone"></i> +1 (123) 456-7890 <span class="ml10 mr10">|</span> <i class="fa fa-envelope"></i> <a class="__cf_email__" href="http://demo.themesease.com/cdn-cgi/l/email-protection" data-cfemail="5c2f292c2c332e281c28343931392f393d2f39723f3331">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></h6>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-google-plus"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-dribbble"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-youtube"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-vimeo"></i></a>
+                    <a href="#" class="trans pr10 pl10"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div> <!-- end row -->
+        </div> <!-- end footer-middle -->
+
+        <!-- ========== Footer - last section ========== -->
+        <div class="footer-last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        &copy; 2016 ThemesEase
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="#" class="mr10">Terms of Use</a> <a href="#">Privacy Policy</a>
+                    </div>
+                </div> <!-- end row -->
+            </div> <!-- end container -->
+        </div> <!-- end footer-last -->
+
+        <!-- ========== Scroll to top button ========== -->
+        <div class="scroll-to-top trans"><i class="fa fa-angle-up"></i></div>
+    </footer>
+
+    <!-- ========== LOADER ========== -->
+    <div class="page-loader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ========== SWITCHER ========== -->
+    <div class="switcher">
+        <span class="handle" title="Style Settings"><i class="ion-ios-gear-outline"></i></span>
+        <h5 class="underline">Style Settings</h5>
+
+        <div class="mb30">
+            <span class="color alizarin" data-color-class="alizarin" title="Alizarin"></span>
+            <span class="color torquoise" data-color-class="torquoise" title="Torquoise"></span>
+            <span class="color sunflower" data-color-class="sunflower" title="Sun Flower"></span>
+            <span class="color carrot" data-color-class="carrot" title="Carrot"></span>
+            <span class="color peterriver" data-color-class="peterriver" title="Peter River"></span>
+            <span class="color wisteria" data-color-class="wisteria" title="Wisteria"></span>
+            <span class="color nephritis" data-color-class="nephritis" title="Nephritis"></span>
+            <span class="color midnightblue" data-color-class="midnightblue" title="Midnight Blue"></span>
+        </div>
+
+        <p class="text-center"><a href="intro.html#demos" title="View Other Demos">View All Demos</a></p>
+    </div>
+
+	<script src="scripts/vendor.js"></script>
+
+	<script src="scripts/plugins.js"></script>
+    <script src="vendor/jquery-form/jquery.form.js"></script>
+	<script src="vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="vendor/jQuery.equalHeights/jquery.equalheights.min.js"></script>
+
+	<script src="scripts/main.js"></script>
+
+    <script src='../../maps.googleapis.com/maps/api/js23f5?extension=.js'></script>
+    <script src='../../www.google.com/recaptcha/api.js'></script>
+
+    <script type="text/javascript">
+
+        // For Google ReCaptcha
+        var doSubmit = false;
+        function reCaptchaVerify(response) {
+            if (response === document.querySelector('.g-recaptcha-response').value) {
+                doSubmit = true;
+            }
+        }
+        document.forms['form'].addEventListener('submit',function(e){
+            if (doSubmit) {
+                /* submit form or do something else */
+            }
+            else {
+                e.preventDefault();
+                swal("Error!", "You need to submit correct Google ReCaptcha!", "error");
+            }
+        });
+
+
+        $(function($) {
+            // For Equal Height columns
+            $('.feature-box-5').equalHeights();
+
+            // For Contact form
+            var options = {
+	            success: function() {
+	                $("#form").clearForm();
+	                swal("Thank You!", "We will get back to you as soon as possible!", "success");
+	            }
+	        };
+	        $("#form").ajaxForm(options);
+
+            // For Google Map
+            var map = new google.maps.event.addDomListener(window, 'load', init);
+            function init() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(40.740697, -73.988786),
+                    zoom: 16,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.DEFAULT,
+                    },
+                    disableDoubleClickZoom: true,
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                    },
+                    scaleControl: true,
+                    scrollwheel: false,
+                    panControl: true,
+                    streetViewControl: true,
+                    draggable : true,
+                    overviewMapControl: true,
+                    overviewMapControlOptions: {
+                        opened: false,
+                    },
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    styles: [
+                          {
+                            "featureType": "water",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "color": "#d3d3d3" }
+                            ]
+                          },{
+                            "featureType": "transit",
+                            "stylers": [
+                              { "color": "#808080" },
+                              { "visibility": "off" }
+                            ]
+                          },{
+                            "featureType": "road.highway",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#b3b3b3" }
+                            ]
+                          },{
+                            "featureType": "road.highway",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "color": "#ffffff" }
+                            ]
+                          },{
+                            "featureType": "road.local",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#ffffff" },
+                              { "weight": 1.8 }
+                            ]
+                          },{
+                            "featureType": "road.local",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                              { "color": "#d7d7d7" }
+                            ]
+                          },{
+                            "featureType": "poi",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#ebebeb" }
+                            ]
+                          },{
+                            "featureType": "administrative",
+                            "elementType": "geometry",
+                            "stylers": [
+                              { "color": "#a7a7a7" }
+                            ]
+                          },{
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "color": "#ffffff" }
+                            ]
+                          },{
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "color": "#ffffff" }
+                            ]
+                          },{
+                            "featureType": "landscape",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#efefef" }
+                            ]
+                          },{
+                            "featureType": "road",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              { "color": "#696969" }
+                            ]
+                          },{
+                            "featureType": "administrative",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              { "visibility": "on" },
+                              { "color": "#737373" }
+                            ]
+                          },{
+                            "featureType": "poi",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                              { "visibility": "off" }
+                            ]
+                          },{
+                            "featureType": "poi",
+                            "elementType": "labels",
+                            "stylers": [
+                              { "visibility": "off" }
+                            ]
+                          },{
+                            "featureType": "road.arterial",
+                            "elementType": "geometry.stroke",
+                            "stylers": [
+                              { "color": "#d6d6d6" }
+                            ]
+                          },{
+                            "featureType": "road",
+                            "elementType": "labels.icon",
+                            "stylers": [
+                              { "visibility": "off" }
+                            ]
+                          },{
+                          },{
+                            "featureType": "poi",
+                            "elementType": "geometry.fill",
+                            "stylers": [
+                              { "color": "#dadada" }
+                            ]
+                          }
+                        ],
+                    }
+                    var mapElement = document.getElementById('fullWidthMap');
+                    var map = new google.maps.Map(mapElement, mapOptions);
+                    var locations = [
+['Salt', 'undefined', 'undefined', 'undefined', 'undefined', 40.740697,  -73.988786, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']
+    ];
+                    for (i = 0; i < locations.length; i++) {
+            			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+            			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+            			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+                       if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+                       if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+                        marker = new google.maps.Marker({
+                            icon: markericon,
+                            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                            map: map,
+                            title: locations[i][0],
+                            desc: description,
+                            tel: telephone,
+                            email: email,
+                            web: web
+                        });
+            link = '';     }
+
+            }
+        });
+    </script>
+</body>
+
+
+<!-- Mirrored from demo.themesease.com/salt-multi-purpose/pages-contact-us-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 27 Apr 2017 20:36:53 GMT -->
+</html>
