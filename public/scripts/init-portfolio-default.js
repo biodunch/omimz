@@ -1,5 +1,6 @@
 $(function($) {
     "use strict";
+    let uri = '/contact';
 
     $("#js-grid-juicy-projects").cubeportfolio({
         filters: "#js-filters-juicy-projects",
@@ -42,12 +43,12 @@ $(function($) {
         singlePageDeeplinking: true,
         singlePageStickyNavigation: true,
         singlePageCounter: "<div class='cbp-popup-singlePage-counter'>{{current}} of {{total}}</div>",
-        singlePageCallback: function(url, element) {
+        singlePageCallback: function(uri, element) {
             // to update singlePage content use the following method: this.updateSinglePage(yourContent)
             var t = this;
             console.log(element);
             $.ajax({
-                    url: url,
+                    url: '/contact',
                     type: "GET",
                     dataType: "html",
                     timeout: 30000
