@@ -1,6 +1,6 @@
 <% layout('layout') -%>
 
-<% include ../partials/header %>
+<% include ./partials/header %>
 <!-- ========== MAIN ========== -->
     <div class="main">
 
@@ -11,15 +11,15 @@
                 <div class="row page-title-row">
                     <div class="col-md-6 col-sm-6">
                         <br />
-                        <h1 class="page-title">Wallpapers</h1>
-                        <p>Browse Our awesome Wallpapers</p>
+                        <h1 class="page-title">All Products</h1>
+                        <p>Browse Our awesome Products</p>
                     </div> <!-- end col-md-6 -->
 
                     <div class="col-md-6 col-sm-6 hidden-xs">
                         <ol class="breadcrumb pull-right border-0">
                             <li><a href="/" class="trans">Home</a></li>
                             <li><a href="/products" class="trans">Products</a></li>
-                            <li><a href="/products/wallpapers" class="active trans">Wallpapers</a></li>
+                            <!--<li><a href="/products/wallpapers" class="active trans">Wallpapers</a></li>-->
                         </ol>
                     </div> <!-- end col-md-6 -->
                 </div> <!-- end page-title-row -->
@@ -33,10 +33,33 @@
 
                     <!-- ========== SECTION HEADER ========== -->
                     <div class="col-md-12 section-header text-center">
-                        <h3 class="section-title underline">Wallpapers</h3>
+                        <h3 class="section-title underline">All Products</h3>
                         <!--<p class="section-subtitle">Load more information on ajax.</p>-->
                     </div> <!-- end section-header -->
 
+                    <!-- ========== FILTER ========== -->
+                    <div class="col-md-12">
+                        <div id="js-filters-juicy-projects" class="cbp-l-filters-button">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                                All <div class="cbp-filter-counter"></div>
+                            </div>
+                            <div data-filter=".wallpapers" class="cbp-filter-item">
+                                Wallpapers <div class="cbp-filter-counter"></div>
+                            </div>
+                            <div data-filter=".wall-panels" class="cbp-filter-item">
+                                Wall Panels <div class="cbp-filter-counter"></div>
+                            </div>
+                            <!--<div data-filter=".wall-stickers" class="cbp-filter-item">
+                                Wall Stickers <div class="cbp-filter-counter"></div>
+                            </div>-->
+                            <div data-filter=".wooden-floor" class="cbp-filter-item">
+                                Wooden Floors <div class="cbp-filter-counter"></div>
+                            </div>
+                            <div data-filter=".windows-blind" class="cbp-filter-item">
+                                Windows Blind <div class="cbp-filter-counter"></div>
+                            </div>
+                        </div> <!-- end cbp-l-filters-button -->
+                    </div> <!-- end col-md-12 -->
                   
 
                     <div class="col-md-12">
@@ -402,6 +425,365 @@
                                 <div class="cbp-l-grid-projects-desc">Wallpapers</div>
                             </div> <!-- end cbp-item -->
 
+                            <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/BRICKS.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/BRICKS.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">BRICKS</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/CULLINANS.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/CULLINANS.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">CULLINANS</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/ELLIPSES.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/ELLIPSES.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">ELLIPSES</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/FAKTUM1.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/FAKTUM1.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">FAKTUM</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl001.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl001.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL001</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl002.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl002.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL002</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl003.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl003.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL003</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl004.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl004.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL004</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl005.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl005.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL005</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl006.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl006.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL006</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl007.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl007.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL007</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl008.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl008.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL008</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl009.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl009.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL009</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl010.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl010.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL010</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl011.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl011.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL011</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl012.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl012.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL012</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl013.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl013.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL013</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl014.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl014.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL014</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl015.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl015.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL015</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
+
+                             <div class="cbp-item wall-panels">
+                                <div class="cbp-caption">
+                                    <div class="cbp-caption-defaultWrap">
+                                       <img src="/images/products/wpl/wpl016.jpg" alt="">         
+                                    </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-alignCenter">
+                                            <div class="cbp-l-caption-body">
+                                                <a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>
+                                                <a href="/images/products/wpl/wpl016.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bricks | Wall Panels">view larger</a>
+                                            </div> <!-- end cbp-l-caption-body -->
+                                        </div> <!-- end cbp-l-caption-alignCenter -->
+                                    </div> <!-- end cbp-caption-activeWrap -->
+                                </div> <!-- end cbp-caption -->
+                                <div class="cbp-l-grid-projects-title">WPL016</div>
+                                <div class="cbp-l-grid-projects-desc">Wall Panel</div>
+                            </div>
                            
 
                         </div> <!-- end cbp -->
@@ -411,12 +793,12 @@
         </section>
 
         <!-- ========== FULL WIDTH CTA ========== -->
-         <% include ../partials/cta %>
+         <% include ./partials/cta %>
 
 
     </div> <!-- end main -->
 
-  <% include ../partials/footer %>
+  <% include ./partials/footer %>
 
 	<script src="/scripts/vendor.js"></script>
 
