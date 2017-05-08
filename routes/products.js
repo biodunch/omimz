@@ -9,15 +9,15 @@ router.get('/wallpapers', (req, res, next)=>{
     res.render('products/wallpapers', {title : 'Wallpapers'})
 })
 
-router.get('/wall-panels', (req, res, next)=>{
+router.get('/wallpanels', (req, res, next)=>{
     res.render('products/wall-panels', {title : 'Wallpapers'})
 })
 
-router.get('/windows-blinds', (req, res, next)=>{
+router.get('/windowblinds', (req, res, next)=>{
     res.render('products/windows-blinds', {title : 'Wallpapers'})
 })
 
-router.get('/wooden-floors', (req, res, next)=>{
+router.get('/woodenfloors', (req, res, next)=>{
     res.render('products/wooden-floors', {title : 'Wallpapers'})
 })
 
