@@ -14,12 +14,4 @@ router.get('/contact', (req, res)=>{
   res.render('contacts', {title : 'Contact Us'})
 })
 
-router.get('/products', (req, res)=>{
-  res.render('contacts', {title : 'Contact Us'})
-})
-
-router.get('/products', (req, res)=>{
-  res.render('contacts', {title : 'Contact Us'})
-})
-
 module.exports = router;
