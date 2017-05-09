@@ -41,4 +41,10 @@
 
     <%- body -%>
 
+    <script src="/scripts/jquery.lazyload.min.js"></script>
+    <script>
+        $(function(){
+            $("img.lazy").lazyload();
+        })
+    </script>
 </body>
