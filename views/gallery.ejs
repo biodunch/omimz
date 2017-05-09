@@ -1,29 +1,25 @@
 <% layout('layout') -%>
 
-    <!-- ========== LOADER ========== -->
-    <div class="page-loader">
-        <div class="spinner"></div>
-    </div>
-
-   <% include ./partials/header %>
-
-    <!-- ========== MAIN ========== -->
+<% include ./partials/header %>
+<!-- ========== MAIN ========== -->
     <div class="main">
 
         <!-- ========== PAGE TITLE ========== -->
+        <br /><br />
         <section class="page-title-div gradient-bg" >
             <div class="container">
                 <div class="row page-title-row">
                     <div class="col-md-6 col-sm-6">
+                        <br />
                         <h1 class="page-title">Gallery</h1>
-                        <!--<p>Portfolio with link for more information (Ajax load).</p>-->
+                        <p>Browse Our awesome Works</p>
                     </div> <!-- end col-md-6 -->
 
                     <div class="col-md-6 col-sm-6 hidden-xs">
                         <ol class="breadcrumb pull-right border-0">
-                            <li><a href="#" class="trans">Home</a></li>
-                            <!--<li><a href="#" class="trans">Features</a></li>-->
-                            <li><a href="#" class="active trans">Gallery</a></li>
+                            <li><a href="/" class="trans">Home</a></li>
+                            <li><a href="/products" class="trans">Gallery</a></li>
+                            <!--<li><a href="/products/wallpapers" class="active trans">Wallpapers</a></li>-->
                         </ol>
                     </div> <!-- end col-md-6 -->
                 </div> <!-- end page-title-row -->
@@ -38,238 +34,217 @@
                     <!-- ========== SECTION HEADER ========== -->
                     <div class="col-md-12 section-header text-center">
                         <h3 class="section-title underline">Gallery</h3>
-                        <p class="section-subtitle">Browse our works</p>
+                        <!--<p class="section-subtitle">Load more information on ajax.</p>-->
                     </div> <!-- end section-header -->
 
-                    
+                    <!-- ========== FILTER ========== -->
+                    <div class="col-md-12">
+                        <div id="js-filters-juicy-projects" class="cbp-l-filters-button">
+                            <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                                All <div class="cbp-filter-counter"></div>
+                            </div>
+                            <div data-filter=".int" class="cbp-filter-item">
+                                Interior Decorations <div class="cbp-filter-counter"></div>
+                            </div>
+                            <div data-filter=".eve" class="cbp-filter-item">
+                                Event Decorations <div class="cbp-filter-counter"></div>
+                            </div>
+                            <!--<div data-filter=".wall-stickers" class="cbp-filter-item">
+                                Wall Stickers <div class="cbp-filter-counter"></div>
+                            </div>-->
+                            <div data-filter=".cle" class="cbp-filter-item">
+                                Cleaning Services <div class="cbp-filter-counter"></div>
+                            </div>
+                            
+                        </div> <!-- end cbp-l-filters-button -->
+                    </div> <!-- end col-md-12 -->
+                  
 
                     <div class="col-md-12">
                         <div id="js-grid-juicy-projects" class="cbp">
-                            <div class="cbp-item graphic">
+
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/01.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int2.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project1.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">Contact Us</a>
-                                                <a href="images/portfolio/380-360/01.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int2.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Dashboard</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item web-design logos">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/02.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int3.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="images/portfolio/380-360/02.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int3.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">World Clock Widget</div>
-                                <div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item graphic logos">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/03.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int4.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int4.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item web-design graphic">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/04.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int5.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project4.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4900333&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view sound</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int5.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Events and More</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item identity web-design">
-                                <div class="cbp-slider-inline">
-                                    <div class="cbp-slider-wrapper">
-                                        <div class="cbp-slider-item cbp-slider-item--active">
-                                            <a href="images/portfolio/380-360/05.jpg" class="cbp-lightbox" data-title="WhereTO App<br>by Tiberiu Neamu">
-                                                <img src="images/portfolio/380-360/05.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="cbp-slider-item">
-                                            <a href="images/portfolio/380-360/07.jpg" class="cbp-lightbox" data-title="World Clock Widget<br>by Paul Flavius Nechita">
-                                                <img src="images/portfolio/380-360/07.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="cbp-slider-item">
-                                            <a href="images/portfolio/380-360/06.jpg" class="cbp-lightbox" data-title="World Clock Widget<br>by Paul Flavius Nechita">
-                                                <img src="images/portfolio/380-360/06.jpg" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="cbp-slider-controls">
-                                        <div class="cbp-slider-prev"></div>
-                                        <div class="cbp-slider-next"></div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">WhereTO App</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Identity</div>
-                            </div> <!-- end cbp-item -->
-
-                            <div class="cbp-item identity web-design">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/07.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int6.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project6.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="images/portfolio/380-360/07.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int6.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item graphic logos">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/08.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int7.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project7.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="images/portfolio/380-360/08.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int7.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item identity graphic">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/09.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int8.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project8.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="http://www.youtube.com/watch?v=Bu9OiDmxCrQ" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Remind~Me More<br>by Tiberiu Neamu">view video</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int8.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Remind~Me More</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Graphic</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item web-design graphic">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/03.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int9.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project9.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="https://www.ted.com/talks/andrew_bastawrous_get_your_next_eye_exam_on_a_smartphone" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Workout Buddy<br>by Tiberiu Neamu">view video</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int9.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Workout Buddy</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item identity web-design">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/01.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int10.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project1.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="https://www.youtube.com/watch?v=3wbvpOIIBQA" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bills Bills Bills<br>by Cosmin Capitanu">view video</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int10.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Bills Bills Bills</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item identity logos">
+                            <div class="cbp-item int">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/06.jpg" alt="">
+                                       <img class="lazy" data-original="/images/gallery/int11.jpg" alt="">         
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="images/portfolio/380-360/06.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Generic Apps<br>by Cosmin Capitanu">view larger</a>
+                                                <!--<a href="/contact" class="cbp-singlePag cbp-l-caption-buttonLeft" rel="nofollow">Get Product</a>-->
+                                                <a href="/images/gallery/int11.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Interior Decoration">view larger</a>
                                             </div> <!-- end cbp-l-caption-body -->
                                         </div> <!-- end cbp-l-caption-alignCenter -->
                                     </div> <!-- end cbp-caption-activeWrap -->
                                 </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Generic Apps</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Logo</div>
+                                <div class="cbp-l-grid-projects-title">Interior Decoration</div>
+                                <!--<div class="cbp-l-grid-projects-desc">Wallpapers</div>-->
                             </div> <!-- end cbp-item -->
 
-                            <div class="cbp-item graphic web-design">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="images/portfolio/380-360/02.jpg" alt="">
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <a href="ajax-portfolio/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
-                                                <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/26519543&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Speed Detector<br>by Cosmin Capitanu">view sound</a>
-                                            </div> <!-- end cbp-l-caption-body -->
-                                        </div> <!-- end cbp-l-caption-alignCenter -->
-                                    </div> <!-- end cbp-caption-activeWrap -->
-                                </div> <!-- end cbp-caption -->
-                                <div class="cbp-l-grid-projects-title">Speed Detector</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Web Design</div>
-                            </div> <!-- end cbp-item -->
+                            
+                           
 
                         </div> <!-- end cbp -->
                     </div> <!-- end col-md-12 -->
@@ -277,24 +252,18 @@
             </div> <!-- end container -->
         </section>
 
-        <!-- ========== CALL TO ACTION SECTION ========== -->
-        <section class="cta trans">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h5 class="cta-title">Get in touch</h5>
-                        <p class="cta-desc mb20">Whenever you need us or just to say hi!</p>
-                        <a href="/contact" style='background-color:black' class="st-btn primary-btn full-rounded">Contact Us</a>
-                    </div> <!-- end text-center -->
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
+        <!-- ========== FULL WIDTH CTA ========== -->
+         <% include ./partials/cta %>
 
-    <% include ./partials/footer %>
 
-	<script src="scripts/vendor.js"></script>
-	<script src="scripts/plugins.js"></script>
-	<script src="scripts/main.js"></script>
+    </div> <!-- end main -->
 
-    <script src="scripts/init-portfolio-default-no-gutter.js"></script>
+  <% include ./partials/footer %>
 
+	<script src="/scripts/vendor.js"></script>
+
+	<script src="/scripts/plugins.js"></script>
+
+	<script src="/scripts/main.js"></script>
+
+    <script src="/scripts/init-portfolio-default.js"></script>
